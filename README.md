@@ -24,8 +24,18 @@ The app fetches index constituents from Wikipedia, downloads stock price data fr
 
 ## ⚙️ Installation
 
+
 Clone the repo:
 
 ```bash
 git clone https://github.com/hucanghe/stock_analysis.git
 cd stock_analysis
+pip install -r requirements.txt
+
+## ⚙️ Usage
+
+Run the app locally:
+```bash
+streamlit run app.py
+
+Open your browser at http://localhost:8501
