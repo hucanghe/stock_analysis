@@ -88,7 +88,7 @@ def get_selected_ticker(grid_response):
 # Streamlit UI
 # -----------------------------
 st.set_page_config(page_title="Top10 Dashboard", layout="wide")
-st.title("📊 Top10 Winners & Losers Dashboard")
+st.title("📊 Top10 Winners & Losers")
 
 # User controls
 window = st.slider("Trading day window", min_value=5, max_value=90, value=30, step=5)
@@ -139,7 +139,7 @@ top.to_csv(prev_file, index=False)
 # -----------------------------
 # Single tab: Tables + Chart
 # -----------------------------
-st.subheader(f"Top10 Tables and Interactive Chart ({window}-day returns, as of {asof_date})")
+st.subheader(f"Top10 and Chart ({window}-day returns, as of {asof_date})")
 col1, col2 = st.columns(2)
 with col1:
     st.write("🏆 Top 10 Winners")
@@ -200,7 +200,7 @@ if ticker_choice and ticker_choice in prices.columns:
     )
     st.plotly_chart(fig, use_container_width=True)
 else:
-    st.info("Click a ticker in the Winners or Losers table to see its chart.")
+    st.info("Click a ticker in the Winners or Losers to see its chart.")
 
 # Download CSV
 st.download_button("💾 Download full CSV", df.to_csv(index=False), f"{index_choice}_returns.csv", "text/csv")
