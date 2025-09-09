@@ -4,3 +4,4 @@ yfinance
 lxml
 requests
 plotly
+st_aggrid
