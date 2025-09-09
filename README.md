@@ -1,4 +1,4 @@
-# 📈 Index Movers Dashboard
+# 📈 Top10 Winners & Losers Dashboard
 
 A lightweight **Streamlit app** to track the **Top Winners and Losers** in major US indices (Nasdaq-100 and S&P 500) over a rolling window of trading days.  
 
@@ -32,10 +32,14 @@ git clone https://github.com/hucanghe/stock_analysis.git
 cd stock_analysis
 pip install -r requirements.txt
 
+---
+
 ## ⚙️ Usage
 
 Run the app locally:
 ```bash
 streamlit run app.py
+
+---
 
 Open your browser at http://localhost:8501
